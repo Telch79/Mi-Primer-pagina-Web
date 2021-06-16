@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Formulario de usuario</title>
+</head>
+
+<body>
+    <a href="index.html"><h2>Volver al inicio</h2></a>
+    <h1>Heladeria</h1>
+    <label for="vendedor">Nombre del Vendedor</label>
+    <input list="vendedores" name="eleccion">
+    <datalist id="vendedores">
+        <option value="Lila"></option>
+        <option value="Tito"></option>
+        <option value="Laura"></option>
+    </datalist>
+    <label for="passwords">Passwords</label>
+    <input type="password" name="passwords" placeholder="Password">
+    <label for="entrega">Fecha de entrega</label>
+    <input type="datetime-local" name="entrega">
+    <form class="Formulario">
+        <fieldset>
+            <legend>Datos del Cliente</legend>
+            <!--Info de cliente-->
+            <label for="nombre">Nombre de Cliente:</label>
+            <input text="nombre" placeholder="Nombre" id="Nombre" required>
+            <br><br>
+            <label for="telefono">Telefono de Cliente:</label>
+            <input type="tel" placeholder="Telefono" id="telefono" required>
+            <br><br>
+            <label for="email">Email de Cliente:</label>
+            <input type="email" placeholder="Email" id="email">
+            <br><br>
+        </fieldset>
+        <fieldset>
+
+            <legend>Elige tu helado</legend>
+            <!-- Info del pedido-->
+            <label for="cantidadPedidos"><h3>Cantidad de Pedidos</h3> </label>
+            <input type="range" name="cantidadPedidos" min="1" max="4">
+           
+            <label for="envase"><h3>Envase</h3></label>
+            <input type="radio" name="envase" value="cucurucho" checked>Cucurucho
+            <br>
+            <input type="radio" name="envase" value="vasito">Vasito
+            <br>
+            <input type="radio" name="envase" value="telgopor">Telgopor
+            <br> <br>
+           
+            <label for="sabores">
+                <h3>Sabores</h3>
+            </label>
+            <input type="" <label for="extras">
+            <h3>Extras</h3></label>
+
+
+            <input type="checkbox" name="extras" value="chips">Chips de chocolate
+            <br>
+            <input type="checkbox" name="extras" value="salsa">Salsa de Frutilla
+            <br>
+            <input type="checkbox" name="extras" value="baño">Baño de chocolate
+            <br>
+            <button type="submit" value="enviar">Enviar</button>
+            <button type="reset" value="reset">Reset</button>
+            <input type="" </fieldset>
+
+    </form>
+
+</body>
+
+</html>
